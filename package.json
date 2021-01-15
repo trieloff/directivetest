@@ -1,0 +1,25 @@
+{
+  "name": "directivetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trieloff/directivetest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trieloff/directivetest/issues"
+  },
+  "homepage": "https://github.com/trieloff/directivetest#readme",
+  "dependencies": {
+    "remark-directive": "^1.0.1",
+    "remark-stringify": "^9.0.1",
+    "unified": "^9.2.0",
+    "unist-builder": "^2.0.3"
+  }
+}
