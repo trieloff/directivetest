@@ -1,7 +1,8 @@
 const unified = require('unified');
-const directive = require('remark-directive')
-const stringify = require('remark-stringify')
-const u = require('unist-builder')
+const directive = require('remark-directive');
+const stringify = require('remark-stringify');
+const u = require('unist-builder');
+const inspect = require('unist-util-inspect');
 
 const tree = u('root', [
   u('paragraph', [u('text', {value: 'One column ("special"), two rows'})]),
@@ -57,6 +58,8 @@ const tree = u('root', [
     ]),
   ])
   ]);
+
+console.log(inspect.noColor(tree));
 
 const res = unified()
   .use(directive)
